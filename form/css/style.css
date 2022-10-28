@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --color: rgba(255, 255, 255);
+    --font-size: 16px;
+    --bg-color: rgba(0,0,0,.5);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: linear-gradient(rgb(36, 59, 85), rgb(20, 30, 48)); 
+   
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color);
+    height: 700px;
+}
+
+.form-wrapper {
+    background-color: var(--bg-color);
+    width: 400px;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 15px 25px var(--bg-color);
+}
+
+.form-wrapper h1 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.input-field {
+    position: relative;
+}
+
+.input-field input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--color);
+    font-size: var(--font-size);
+    padding: 10px 0;
+    background: transparent;
+    color: var(--color);
+    margin-bottom: 20px;
+    outline: none;
+}
+
+.input-field label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: var(--font-size);
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.input-field input:focus ~ label {
+    top: -20px;
+    left: 0;
+    font-size: 12px;
+    color: rgb(3, 233, 244);
+}
+
+.btn-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn {
+    border: 1px solid #03e9f4;
+    background: rgba(20, 20, 20, .6);
+    font-size: 18px;
+    color: white;
+    margin-top: 20px;
+    padding: 10px 50px;
+    cursor: pointer;
+    transition: all .4s linear;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    box-shadow: 0 5px 15px 0 #02a9b1;
+  }
+  .btn:hover {
+    background: rgba(20, 20, 20, .8);
+    padding: 10px 80px;
+  }
+
+  .gender {
+    padding-bottom: 10px;
+  }
+
+  .textarea {
+    padding-top: 20px;
+  }
+
+  textarea {
+    padding: 5px;
+    width: 100%;
+  }
+
+  .select {
+    padding-top: 20px;
+  }
+
+  select {
+    margin-top: 10px;
+    width: 100%;
+  }
