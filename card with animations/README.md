@@ -7,6 +7,7 @@ HTML
 CSS
 
 ## Hosted page
+https://card-with-animations.kasiepatricia.repl.co/
 
 ### Author
 Ugwu Kasie
