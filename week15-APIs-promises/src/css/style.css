@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,200;0,300;0,400;1,200;1,300;1,400&display=swap');
+
+body {
+    text-align: center;
+    font-family: 'Sofia Sans', sans-serif;
+}
+
+main {
+    /* margin-top: 15%; */
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+button { 
+    cursor: pointer;
+    border: none;
+    border-radius: 7px;
+    color: azure;
+    background-color: rgb(241, 103, 103);
+    padding: 10px;
+    margin: 20px 0;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.5s;
+}
+
+.btn-joke:hover, #punchlineBtn:hover {
+    transform: scale(1.2);
+    background-color: rgb(212, 66, 66);
+}
+
+.joke-img {
+    height: 100px;
+}
+
+#punchlineBtn {
+    display: none;
+    margin: auto;
+    margin-top: 20px;
+}
+
+#resetBtn {
+    display: none;
+    margin: auto;
+    background-color: rgb(49, 149, 146);
+}
+
+#resetBtn:hover {
+    transform: scale(1.2);
+    background-color: rgb(13, 98, 95);
+   
+}
+
+.loader {
+    display: none;
+    margin: auto;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 7px solid #dddcdc;
+    border-top: 7px solid rgb(192, 61, 61);
+    animation:  spinner 1.4s linear infinite;
+}
+
+@keyframes spinner {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

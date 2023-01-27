@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/css/style.css" type="text/css" />
+    <title>Tell a Joke</title>
+  </head>
+  <body>
+    <main>
+      <div>
+        <img
+          src="https://thumbs.gfycat.com/BestGoodnaturedBlesbok-size_restricted.gif"
+          alt="A jokie eye"
+          class="joke-img"
+          id="joke-img"
+        />
+      </div>
+
+      <div>
+        <button class="btn-joke" onclick="tellAJoke()">Tell a joke</button>
+        <div class="loader"></div>
+        <p id="setUp"></p>
+        <button id="punchlineBtn" onclick="tellPunchline()">Punchline</button>
+        <p id="punchline"></p>
+      </div>
+      <div>
+        <button id="resetBtn" onclick="resetAll()">Reset Page</button>
+      </div>
+    </main>
+
+    <script src="./src/js/app.js"></script>
+  </body>
+</html>
