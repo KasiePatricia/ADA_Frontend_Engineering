@@ -31,14 +31,13 @@ button {
     background-color: rgb(212, 66, 66);
 }
 
-.joke-img {
-    height: 100px;
-}
-
 #punchlineBtn {
     display: none;
     margin: auto;
     margin-top: 20px;
+}
+img {
+    height: 200px;
 }
 
 #resetBtn {

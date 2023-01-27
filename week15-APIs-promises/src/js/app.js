@@ -23,7 +23,7 @@ const tellAJoke = () =>{
 
 const tellPunchline = () => {
     punchline.innerHTML = joke.punchline;
-    jokeImg.src = "https://i.pinimg.com/originals/f0/05/39/f00539302feb966bfbf8530377d22bdb.png";
+    jokeImg.src = "https://media.tenor.com/WMl9mhz4pDgAAAAM/cute-laugh.gif";
     resetbtn.style.display = 'block';
 }
 
