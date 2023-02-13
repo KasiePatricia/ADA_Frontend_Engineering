@@ -32,8 +32,14 @@ function App() {
               Welcome to Lovebirds
             </h5>
             <form className="p-3" id="form">
-                <Input type={'Email'}/>
-                <Input type={'Password'}/>
+                <Input type={'Email'} 
+                placeholder= {'Enter your name'}
+                id = {'name'}
+                label= {'Name'}/>
+                <Input type={'Password'}
+                placeholder= {'Enter your password'}
+                id = {'password'}
+                label= {'Password'}/>
                 
               <div className="text-end pt-2">
                 <a
