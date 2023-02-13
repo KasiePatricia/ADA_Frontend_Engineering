@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* signup section */
+.signup-section h2 {
+  font-family: 'Dancing Script', cursive;
+  font-weight: 700;
+}
+.google img {
+  width: 4%;
+  height: 4%;
+}
+.main-line {
+  position: relative;
+}
+.line::before, .line::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 0.9px;
+  width: 20%;
+  background-color: black;
+  top: 19%;
+}
+.line::before {
+  left: 23%;
+}
+.line::after {
+  right: 23%;
+}
+
+/* form error */
+.input-box.success input {
+  border-color: #09c372 !important;
+}
+
+.input-box.error input {
+  border-color: #ff3860 !important;
+}
+
+.input-box .error {
+  color: #ff3860;
+  padding-top: 4px;
+  font-size: 11px;
+  height: 13px;
+}
